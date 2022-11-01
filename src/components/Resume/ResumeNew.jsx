@@ -4,8 +4,10 @@ import Button from "react-bootstrap/Button";
 import Particle from "../Particle";
 import { AiOutlineDownload } from "react-icons/ai";
 import { Document, Page, pdfjs } from "react-pdf";
+import { motion, AnimatePresence } from "framer-motion";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
+
 
 const resumeLink =
   "https://raw.githubusercontent.com/xiaomeng831/xiaomeng831/main/Xiaomeng's%20Resume.pdf";
@@ -18,33 +20,43 @@ function ResumeNew() {
   }, []);
 
   return (
-    <div>
-      <Container fluid className="resume-section">
-        <Particle />
-        <Row style={{ justifyContent: "center", position: "relative" }}>
-          <Button
-            variant="primary"
-            href="https://github.com/xiaomeng831/xiaomeng831/raw/main/Xiaomeng's%20Resume.pdf"
-            style={{ maxWidth: "250px" }}
-          >
-            <AiOutlineDownload />
-            &nbsp;Download
-          </Button>
-        </Row>
+    <AnimatePresence>
+      <motion.div
+        key="modal"
+        initial={{ opacity: 0, }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 1 }}
+      >
+        <div>
+          <Container fluid className="resume-section">
+            <Particle />
+            <Row style={{ justifyContent: "center", position: "relative" }}>
+              <Button
+                variant="primary"
+                href="https://github.com/xiaomeng831/xiaomeng831/raw/main/Xiaomeng's%20Resume.pdf"
+                style={{ maxWidth: "250px" }}
+              >
+                <AiOutlineDownload />
+                &nbsp;Download
+              </Button>
+            </Row>
 
-        <Row className="resume">
-          <Document file={resumeLink} className="d-flex justify-content-center">
-            <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />
-          </Document>
-          <div style={{height:"20px"}}></div>
-          <Document file={resumeLink} className="d-flex justify-content-center">
-            <Page pageNumber={2} scale={width > 786 ? 1.7 : 0.6} />
-          </Document>
-        </Row>
+            <Row className="resume">
+              <Document file={resumeLink} className="d-flex justify-content-center">
+                <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />
+              </Document>
+              <div style={{height:"20px"}}></div>
+              <Document file={resumeLink} className="d-flex justify-content-center">
+                <Page pageNumber={2} scale={width > 786 ? 1.7 : 0.6} />
+              </Document>
+            </Row>
 
-        
-      </Container>
-    </div>
+            
+          </Container>
+        </div>
+      </motion.div>
+    </AnimatePresence>  
   );
 }
 
