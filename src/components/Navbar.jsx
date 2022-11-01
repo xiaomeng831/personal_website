@@ -9,7 +9,6 @@ import {
   AiOutlineUser,
 } from "react-icons/ai";
 import { GoRepo } from "react-icons/go";
-import { TbLetterX } from "react-icons/tb";
 
 import { CgFileDocument } from "react-icons/cg";
 
@@ -36,7 +35,7 @@ function NavBar() {
     >
       <Container>
         <Navbar.Brand href="/" className="d-flex">
-          <span style={{color:"#ffd700", fontSize:"2rem"}}>Brady</span>
+          <span style={{color:"#16B0E3", fontSize:"2rem"}}>Brady</span>
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
@@ -63,6 +62,16 @@ function NavBar() {
                 onClick={() => updateExpanded(false)}
               >
                 <AiOutlineUser style={{ marginBottom: "2px" }} /> About
+              </Nav.Link>
+            </Nav.Item>
+
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="/project"
+                onClick={() => updateExpanded(false)}
+              >
+                <CgFileDocument style={{ marginBottom: "2px" }} /> Projects
               </Nav.Link>
             </Nav.Item>
 

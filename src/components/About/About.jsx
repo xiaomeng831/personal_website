@@ -4,7 +4,6 @@ import Particle from "../Particle";
 import Tilt from "react-parallax-tilt";
 import Techstack from "./Techstack";
 import Aboutcard from "./AboutCard";
-import Projects from "./Projects";
 import family from "../../Assets/family.png";
 import Toolstack from "./Toolstack";
 
@@ -24,7 +23,7 @@ function About() {
             }}
           >
             <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
-              About <strong className="gold">ME</strong>
+              About <strong className="azure">ME</strong>
             </h1>
             <Aboutcard />
           </Col>
@@ -39,20 +38,16 @@ function About() {
             
           </Col>
         </Row>
-        <h1 className="project-heading">
-          Personal <strong className="gold">Projects</strong>
-        </h1>
-        <Projects />
 
 
         <h1 className="project-heading">
-          <strong className="gold">Language</strong> and <strong className="gold">Framework</strong>  
+          <strong className="azure">Language</strong> and <strong className="azure">Framework</strong>  
         </h1>
 
         <Techstack />
 
         <h1 className="project-heading">
-          other <strong className="gold">techs</strong>
+          other <strong className="azure">techs</strong>
         </h1>
         <Toolstack />  
 

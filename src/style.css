@@ -3,10 +3,10 @@ html {
 
   --image-gradient: black;
 
-  --imp-text-color: #ffd700;
+  --imp-text-color: #16B0E3;
 }
 
-.gold {
+.azure {
   color: var(--imp-text-color) !important;
 }
 
@@ -21,25 +21,14 @@ button:focus {
 /* --------- */
 
 ::-webkit-scrollbar {
-  width: 7px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: #ffd700;
+  width: 15px;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgba(255, 215, 0, 0.959);
-  border-radius: 12px;
+  background: #16B0E3;
 }
 
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: rgba(255, 215, 00, 0.911);
-  border-radius: 12px;
-}
 
 /* --------- */
 /* Navbar Section  */
@@ -66,7 +55,7 @@ button:focus {
 
 .navbar-toggler span {
   display: block !important;
-  background-color: #ffd700 !important;
+  background-color: #16B0E3 !important;
   height: 4px !important;
   width: 27px !important;
   margin-top: 5px !important;
@@ -163,7 +152,7 @@ button:focus {
   height: 5px;
   width: 0;
   border-radius: 16px;
-  background: #ffd700;
+  background: #16B0E3;
   bottom: 1px;
   left: 0;
   z-index: -1;
@@ -209,17 +198,17 @@ button:focus {
 }
 
 .main-name {
-  color: #ffd700;
+  color: #16B0E3;
 }
 
 .Typewriter__wrapper {
   font-size: 2.2em !important;
-  color: #ffd700 !important;
+  color: #16B0E3 !important;
   font-weight: 600 !important;
 }
 .Typewriter__cursor {
   font-size: 2.4em !important;
-  color: #ffd700 !important;
+  color: #16B0E3 !important;
 }
 
 @media (max-width: 767px) {
@@ -280,7 +269,7 @@ button:focus {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background: #ffd700;
+  background: #16B0E3;
   transition: 0.5s;
   transform: scale(0.9);
   z-index: -1;
@@ -288,13 +277,13 @@ button:focus {
 
 .home-social-icons:hover::before {
   transform: scale(1.1);
-  box-shadow: 0 0 15px #ffd700;
+  box-shadow: 0 0 15px #16B0E3;
 }
 
 .home-social-icons:hover {
-  color: #ffd700;
-  box-shadow: 0 0 5px #ffd700;
-  text-shadow: 0 0 2px #ffd700;
+  color: #16B0E3;
+  box-shadow: 0 0 5px #16B0E3;
+  text-shadow: 0 0 2px #16B0E3;
 }
 
 .social-icons {
@@ -304,7 +293,7 @@ button:focus {
 }
 
 .icon-colour {
-  color: #ffd700 !important;
+  color: #16B0E3 !important;
 }
 
 
@@ -354,7 +343,7 @@ button:focus {
 /* Card, btn, text */
 /* --------- */
 .blockquote-footer {
-  color: #ffd700 !important;
+  color: #16B0E3 !important;
 }
 
 
@@ -372,14 +361,14 @@ button:focus {
 
 .btn-primary {
   color: #fff !important;
-  background-color: #ffd700 !important;
-  border-color: #ffd700 !important;
+  background-color: #16B0E3 !important;
+  border-color: #16B0E3 !important;
 }
 
 .btn-primary:hover {
   color: #fff !important;
-  background-color: #ffd700 !important;
-  border-color: #ffd700 !important;
+  background-color: #16B0E3 !important;
+  border-color: #16B0E3 !important;
 }
 .btn:focus {
   outline: none !important;
@@ -404,7 +393,7 @@ button:focus {
   margin: 15px !important;
   padding: 10px !important;
   opacity: 0.93 !important;
-  border: 1.7px solid rgba(255, 215, 0, 0.637) !important;
+  border: 1.7px solid rgba(22, 176, 227, 0.637) !important;
   vertical-align: middle !important;
   text-align: center !important;
   border-radius: 5px !important;
@@ -423,7 +412,7 @@ button:focus {
 .tech-icons:hover {
   transform: scale(1.05) !important;
   overflow: hidden !important;
-  border: 2.2px solid rgba(255, 215, 0, 0.883) !important;
+  border: 2.2px solid rgba(22, 176, 227, 0.883) !important;
 }
 .tech-icon-images {
   padding: 20px !important;
@@ -447,6 +436,47 @@ button:focus {
     padding-top: 0 !important;
   }
 }
+
+/* --------- */
+/* Projects */
+/* --------- */
+.project-section {
+  position: relative !important;
+  padding-top: 150px !important;
+  padding-bottom: 30px !important;
+  background-image: var(--section-background-color) !important;
+}
+
+.project-heading {
+  color: white !important;
+  font-size: 2.3em !important;
+  font-weight: 500 !important;
+  padding-top: 10px !important;
+}
+
+.project-card {
+  padding-top: 50px !important;
+  padding-bottom: 50px !important;
+  padding-left: 25px !important;
+  padding-right: 25px !important;
+  height: auto !important;
+}
+
+.project-card-view {
+  box-shadow: 0 4px 5px 3px rgba(22, 176, 227, 0.459) !important;
+  color: white !important;
+  background-color: transparent !important;
+  opacity: 0.9 !important;
+  transition: all 0.5s ease 0s !important;
+  height: 100% !important;
+}
+
+.project-card-view:hover {
+  transform: scale(1.02) !important;
+  overflow: hidden !important;
+  box-shadow: 0 4px 4px 5px rgba(22, 176, 227, 0.561) !important;
+}
+
 /* --------- */
 /* Resume */
 /* --------- */
@@ -494,14 +524,14 @@ button:focus {
 .resume .resume-item {
   padding: 0 0 10px 25px;
   margin-top: -2px;
-  border-left: 2px solid #ffd700;
+  border-left: 2px solid #16B0E3;
   position: relative;
 }
 
 .resume .resume-item .resume-title {
   line-height: 18px;
   font-size: 0.9em;
-  background: #5234795d;
+  background: #16B0E3;
   padding: 8px 15px;
   display: inline-block;
   font-weight: 600;
@@ -531,7 +561,7 @@ button:focus {
   left: -9px;
   top: 0;
   background: #fff;
-  border: 2px solid #ffd700;
+  border: 2px solid #16B0E3;
 }
 
 
@@ -550,8 +580,8 @@ button:focus {
 
 .repo-btn-inner:hover {
   transform: translateY(-2px) !important;
-  background-color: #ffd700 !important;
-  border-color: #ffd700 !important;
+  background-color: #16B0E3 !important;
+  border-color: #16B0E3 !important;
 }
 .repo-btn-inner::after {
   display: none !important;

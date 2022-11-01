@@ -1,9 +1,8 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import SocialMedia from "./SocilaMedia"
 import Tilt from "react-parallax-tilt";
-import { AiFillGithub } from "react-icons/ai";
-import { FaLinkedinIn } from "react-icons/fa";
-import me from "../../Assets/me.png";
+import astronaut from "../../Assets/astronaut.png";
 import Particle from "../Particle";
 import Type from "./Type";
 
@@ -14,6 +13,17 @@ function Home() {
         <Particle />
         <Container className="home-content">
           <Row>
+
+          <Col md={5} style={{ paddingBottom: 20 }}>
+              <Tilt> 
+              <img
+                src={astronaut}
+                alt="home pic"
+                className="img-fluid"
+                style={{ maxHeight: "450px", opacity:0.8 }}
+              />
+              </Tilt>              
+            </Col>
 
             <Col md={7} className="home-header">
               <h1 style={{ paddingBottom: 15 }} className="heading">
@@ -30,44 +40,8 @@ function Home() {
                 <Type />
               </div>
             </Col>
-
-            <Col md={5} style={{ paddingBottom: 20 }}>
-              <Tilt> 
-              <img
-                src={me}
-                alt="home pic"
-                className="img-fluid"
-                style={{ maxHeight: "450px", opacity:0.8 }}
-              />
-              </Tilt>              
-            </Col>
-            <Col md={12} className="home-social">
-            <h1>Social Links</h1>
-            <br />
-            <ul className="home-social-links">
-              <li className="social-icons">
-                <a
-                  href="https://github.com/xiaomeng831"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                >
-                  <AiFillGithub />
-                </a>
-              </li>              
-              <li className="social-icons">
-                <a
-                  href="https://www.linkedin.com/in/xiaomeng-xu-915ba9200/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                >
-                  <FaLinkedinIn />
-                </a>
-              </li>              
-            </ul>
-          </Col>
-
+             
+             <SocialMedia />
           </Row>
         </Container>
       </Container>
