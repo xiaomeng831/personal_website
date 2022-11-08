@@ -10,7 +10,7 @@ pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/$
 
 
 const resumeLink =
-  "https://raw.githubusercontent.com/xiaomeng831/xiaomeng831/main/Xiaomeng's%20Resume.pdf";
+  "https://raw.githubusercontent.com/xiaomeng831/personal_website/main/src/Assets/Xiaomeng's%20Resume.pdf";
 
 function ResumeNew() {
   const [width, setWidth] = useState(1200);
@@ -34,7 +34,7 @@ function ResumeNew() {
             <Row style={{ justifyContent: "center", position: "relative" }}>
               <Button
                 variant="primary"
-                href="https://github.com/xiaomeng831/xiaomeng831/raw/main/Xiaomeng's%20Resume.pdf"
+                href="https://github.com/xiaomeng831/personal_website/raw/main/src/Assets/Xiaomeng's%20Resume.pdf"
                 style={{ maxWidth: "250px" }}
               >
                 <AiOutlineDownload />
