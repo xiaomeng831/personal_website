@@ -23,30 +23,39 @@ function Projects() {
               About My <strong className="azure">Projects </strong>
             </h1>
             <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-              <Col md={4} className="project-card">
+              <Col md={3} className="project-card">
                 <ProjectCard
                   imgPath={project}
-                  title="Lorem Ipsum"
-                  description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
-                  ghLink="https://"
+                  title="Personal Portfolio"
+                  description="A personal website with React.js, Bootstrap, Vercel platform"
+                  ghLink="https://github.com/xiaomeng831/personal_website"
                 />
               </Col>
 
-              <Col md={4} className="project-card">
+              <Col md={3} className="project-card">
                 <ProjectCard
                   imgPath={project}
-                  title="Lorem Ipsum"
-                  description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
-                  ghLink="https://"
+                  title="Personal Blog"
+                  description="A personal bolg with React.js, Node.js and MySQL"
+                  ghLink="https://github.com/xiaomeng831/react_blog"
                 />
               </Col>
 
-              <Col md={4} className="project-card">
+              <Col md={3} className="project-card">
                 <ProjectCard
                   imgPath={project}
-                  title="Lorem Ipsum"
-                  description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
-                  ghLink="https://"            
+                  title="Savvy Renos and Design"
+                  description="An Android Application is built for a renovation company with Dart, Flutter and Firebase Database"
+                  ghLink="https://github.com/xiaomeng831/savvy_teamwork"            
+                />
+              </Col>
+
+              <Col md={3} className="project-card">
+                <ProjectCard
+                  imgPath={project}
+                  title="Simple Social Media"
+                  description="A simple web application with MERN stack (MongoDB, Express.js, React.js, Node.js)"
+                  ghLink="https://github.com/xiaomeng831/mini_social_media"            
                 />
               </Col>
               
