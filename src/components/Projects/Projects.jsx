@@ -50,14 +50,14 @@ function Projects() {
                 />
               </Col>
 
-              <Col md={3} className="project-card">
+              {/* <Col md={3} className="project-card">
                 <ProjectCard
                   imgPath={project}
                   title="Simple Social Media"
                   description="A simple web application with MERN stack (MongoDB, Express.js, React.js, Node.js)"
                   ghLink="https://github.com/xiaomeng831/mini_social_media"            
                 />
-              </Col>
+              </Col> */}
               
             </Row>
           </Container>
