@@ -55,7 +55,7 @@ function NavBar() {
 
             <Nav.Item>
               <Nav.Link
-                href="/home#Skills"
+                href="/#Skills"
                 onClick={() => updateExpanded(false)}
               >
                 <AiOutlineUser style={{ marginBottom: "2px" }} /> About
@@ -64,7 +64,7 @@ function NavBar() {
 
             <Nav.Item>
               <Nav.Link
-                href="/home#Projects"
+                href="/#Projects"
                 onClick={() => updateExpanded(false)}
               >
                 <CgFileDocument style={{ marginBottom: "2px" }} /> Projects
