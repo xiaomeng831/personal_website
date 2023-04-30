@@ -1,53 +1,63 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
+import { 
+  FaJava, 
+  FaNode, 
+  FaReact,
+  FaBootstrap
+} from "react-icons/fa";
 import {
-  SiGit,
-  SiApachemaven,  
-  SiNpm,
-  SiDocker,
-  SiNginx,
-  SiApachetomcat,
-  SiAmazonaws,
-  SiBootstrap,
-  SiMaterialui
+  SiJavascript,
+  SiTypescript,
+  SiSpring,
+  SiDotnet,
+  SiCsharp,
+  SiAngular,
+  SiHtml5,
+  SiCss3
 } from "react-icons/si";
-import { MdHttp } from "react-icons/md";
 
-function Toolstack() {
+function Techstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       <Col xs={4} md={2} className="tech-icons">
-        <SiGit />
+        <SiCsharp />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiApachemaven />
+        <SiDotnet />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiNpm />
+        <FaJava />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiDocker />
+        <SiSpring />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiNginx />
+        <FaNode />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiApachetomcat />
+        <SiJavascript />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiAmazonaws />
+        <SiTypescript />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <MdHttp />
+        <SiAngular />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiBootstrap />
+        <FaReact />
       </Col>
-      <Col xs={4} md={2} className="tech-icons">      
-        <SiMaterialui />
+      <Col xs={4} md={2} className="tech-icons">
+        <SiHtml5 />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiCss3 />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <FaBootstrap />
       </Col>
     </Row>
   );
 }
 
-export default Toolstack;
+export default Techstack;

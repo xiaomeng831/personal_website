@@ -6,7 +6,7 @@ import { BsGithub } from "react-icons/bs";
 function ProjectCards(props) {
   return (
     <Card className="project-card-view">
-      <Card.Img variant="top" src={props.imgPath} style={{width:"200px", margin:"auto"}} alt="card-img" />
+      <Card.Img variant="top" src={props.imgPath} style={{width:"400px", margin:"auto"}} alt="card-img" />
       <Button variant="primary" href={props.ghLink} target="_blank" style={{width:"150px", margin:"auto"}}>
           <BsGithub /> &nbsp; {"Go to Github"}
         </Button>

@@ -35,7 +35,7 @@ function NavBar() {
     >
       <Container>
         <Navbar.Brand href="/" className="d-flex">
-          <span style={{color:"#16B0E3", fontSize:"2rem"}}>Brady</span>
+          <span style={{ color: "#16B0E3", fontSize: "2rem" }}>Brady</span>
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
@@ -43,22 +43,19 @@ function NavBar() {
             updateExpanded(expand ? false : "expanded");
           }}
         >
-          <span></span>
-          <span></span>
-          <span></span>
+
         </Navbar.Toggle>
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto" defaultActiveKey="#home">
             <Nav.Item>
-              <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
+              <Nav.Link href="/" onClick={() => updateExpanded(false)}>
                 <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
               </Nav.Link>
             </Nav.Item>
 
             <Nav.Item>
               <Nav.Link
-                as={Link}
-                to="/about"
+                href="#Skills"
                 onClick={() => updateExpanded(false)}
               >
                 <AiOutlineUser style={{ marginBottom: "2px" }} /> About
@@ -67,8 +64,7 @@ function NavBar() {
 
             <Nav.Item>
               <Nav.Link
-                as={Link}
-                to="/project"
+                href="#Projects"
                 onClick={() => updateExpanded(false)}
               >
                 <CgFileDocument style={{ marginBottom: "2px" }} /> Projects
@@ -93,7 +89,7 @@ function NavBar() {
               >
                 <GoRepo style={{ marginBottom: "2px" }} />
               </Button>
-            </Nav.Item>            
+            </Nav.Item>
           </Nav>
         </Navbar.Collapse>
       </Container>

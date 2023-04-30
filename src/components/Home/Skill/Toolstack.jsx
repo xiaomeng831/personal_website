@@ -1,43 +1,25 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import { 
-  FaJava, 
-  FaNode, 
-  FaReact 
-} from "react-icons/fa";
 import {
-  SiJavascript,
-  SiTypescript,
-  SiSpring,
-  SiSpringboot,
+  SiGit,
   SiMysql,
   SiPostgresql,
-  SiMongodb
+  SiMicrosoftsqlserver,
+  SiRedis,
+  SiMongodb,
+  SiMicrosoftazure,
+  SiAmazonaws,
+  SiDocker,
+  SiNginx,
+  SiJenkins
 } from "react-icons/si";
+import { MdHttp } from "react-icons/md";
 
-function Techstack() {
+function Toolstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       <Col xs={4} md={2} className="tech-icons">
-        <FaJava />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiJavascript />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <FaNode />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiTypescript />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiSpring />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiSpringboot />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <FaReact />
+        <SiMicrosoftsqlserver />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiMysql />
@@ -46,10 +28,34 @@ function Techstack() {
         <SiPostgresql />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
+        <SiRedis />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
         <SiMongodb />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiGit />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiMicrosoftazure />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiAmazonaws />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiDocker />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">      
+        <SiNginx />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">      
+        <MdHttp />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">      
+        <SiJenkins />
       </Col>
     </Row>
   );
 }
 
-export default Techstack;
+export default Toolstack;

@@ -1,11 +1,9 @@
 import React, { useState, useEffect } from "react";
-import Navbar from "./components/Navbar";
+import Navbar from "./components/Shared/Navbar";
 import Home from "./components/Home/Home";
-import About from "./components/About/About";
-import Footer from "./components/Footer";
+import Footer from "./components/Shared/Footer";
 import Resume from "./components/Resume/ResumeNew";
-import Projects from "./components/Projects/Projects";
-import ScrollToTop from "./components/ScrollToTop";
+import ScrollToTop from "./components/Shared/ScrollToTop";
 import {
   BrowserRouter as Router,
   Route,
@@ -34,8 +32,8 @@ function App() {
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/project" element={<Projects />} />
+          {/* <Route path="/about" element={<About />} />
+          <Route path="/project" element={<Projects />} /> */}
           <Route path="/resume" element={<Resume />} />
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>

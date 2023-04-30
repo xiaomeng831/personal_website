@@ -4,9 +4,10 @@ import { motion, AnimatePresence } from "framer-motion";
 import SocialMedia from "./SocilaMedia"
 import Tilt from "react-parallax-tilt";
 import astronaut from "../../Assets/astronaut.png";
-import Particle from "../Particle";
+import Particle from "../Shared/Particle";
 import Type from "./Type";
-
+import Projects from './Projects/Projects'
+import Skills from './Skill/Skills'
 
 
 
@@ -19,46 +20,65 @@ function Home() {
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
         transition={{ duration: 1 }}
-      > 
+      >
         <section>
           <Container fluid className="home-section" id="home">
             <Particle />
             <Container className="home-content">
               <Row>
-
-              <Col md={5} style={{ paddingBottom: 20 }}>
-                  <Tilt> 
-                  <img
-                    src={astronaut}
-                    alt="home pic"
-                    className="img-fluid"
-                    style={{ maxHeight: "450px", opacity:0.8 }}
-                  />
-                  </Tilt>              
+                <Col md={5} style={{ paddingBottom: 20 }}>
+                  <Tilt>
+                    <img
+                      src={astronaut}
+                      alt="home pic"
+                      className="img-fluid"
+                      style={{ maxHeight: "450px", opacity: 0.8 }}
+                    />
+                  </Tilt>
+                  <SocialMedia />
                 </Col>
 
                 <Col md={7} className="home-header">
-                  <h1 style={{ paddingBottom: 15 }} className="heading">
+                  <span className="welcome">
                     Welcome to my Personal Portfolio
-                  </h1>
-
-                  <h1 className="heading-name">
-                    &nbsp;I'M
-                    <strong className="main-name"> Brady Xu</strong>
-                  </h1>
-
-                  <div style={{ padding: 50, textAlign: "left" }}>
-                    <strong style={{fontSize:"3rem"}}>⌨</strong>              
+                  </span>
+                  <hr />
+                  <span>
+                    <strong style={{ fontSize: "3rem" }}>🚀</strong>
+                    <strong className="heading-name">Hi, There. I'M Brady</strong>
+                    <br />
                     <Type />
-                  </div>
+                  </span>
+                  <br />
+                  <ul>
+                    <li>
+                      6 years work experience as a full stack developer with <strong className="main-color">C#</strong>, <strong className="main-color">ASP.Net</strong> and <strong className="main-color">JavaScript</strong>, <strong className="main-color">Angular</strong>.
+                    </li>
+                    <li>
+                      Also good at <strong className="main-color">Java with Spring</strong>, <strong className="main-color">Node.js with Express.js</strong>, <strong className="main-color">TypeScript</strong> and <strong className="main-color">React</strong>.
+                    </li>
+                    <li>
+                      Solid understanding about <strong className="main-color">OOP</strong>, <strong className="main-color">Design Patterns</strong> and familiar with <strong className="main-color">microservices</strong>
+                    </li>
+                    <li>
+                      <strong className="main-color">A Canada PR</strong> with legal work authorization
+                    </li>
+                  </ul>
                 </Col>
-                
-                <SocialMedia />
+
               </Row>
             </Container>
           </Container>
         </section>
-      </motion.div> 
+        <section>
+          <Skills />
+        </section>
+
+        <section>
+          <Projects />
+        </section>
+
+      </motion.div>
     </AnimatePresence>
   );
 }

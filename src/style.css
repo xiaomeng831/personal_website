@@ -187,18 +187,28 @@ button:focus {
   text-align: left;
 }
 
-.heading {
+/* .heading {
   font-size: 2.4em !important;
   padding-left: 50px !important;
-}
+} */
 
 .heading-name {
   font-size: 2.5em !important;
   padding-left: 45px !important;
 }
 
-.main-name {
+.main-color {
   color: #16B0E3;
+}
+
+.welcome {
+  font-weight: 700;
+  letter-spacing: 0.8px; 
+  padding: 8px 10px;
+  background: linear-gradient(90.21deg, rgba(54, 114, 170, 0.5) -5.91%, rgba(67, 30, 234, 0.5) 111.58%);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  font-size: 20px;
+  display: inline-block;
 }
 
 .Typewriter__wrapper {
@@ -410,9 +420,13 @@ button:focus {
 }
 
 .tech-icons:hover {
-  transform: scale(1.05) !important;
+  /* transform: scale(1.05) !important;
   overflow: hidden !important;
-  border: 2.2px solid rgba(22, 176, 227, 0.883) !important;
+  border: 2.2px solid rgba(22, 176, 227, 0.883) !important; */
+  background-color: #4cc9f0;
+  -webkit-box-shadow: 10px 10px 99px 6px rgba(76,201,240,1);
+  -moz-box-shadow: 10px 10px 99px 6px rgba(76,201,240,1);
+  box-shadow: 10px 10px 99px 6px rgba(76,201,240,1);
 }
 .tech-icon-images {
   padding: 20px !important;
